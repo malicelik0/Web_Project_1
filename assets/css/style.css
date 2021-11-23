@@ -137,7 +137,7 @@ body{
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
-  width: 50%;
+  width: 45%;
 }
 
 .main{
@@ -217,6 +217,7 @@ body{
   flex-wrap: nowrap;
   align-items: center;
   align-content: center;
+  
 }
 .sliders-body .title{
   display: flex;
@@ -424,4 +425,116 @@ width: 100%;
 
 .slider-section {
   margin: 50px 20px;
+}
+
+.sliders-arrows{
+  width: 100%;
+   
+    position: absolute;
+    top: 50%;
+}
+.sliders-arrows a i{
+  font-size:20px;
+  color:rgb(255, 255, 255);
+  background-color:#1c1d1f;
+  border-radius:50%;
+  padding: 11px 15px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.083);
+
+} 
+
+.sliders{
+  position: relative;
+}
+.after-arrow{
+  float: right;
+  
+}
+
+.menu-bells{
+  position: absolute;
+  top: 80px;
+  background-color: #fff;
+  z-index: 1;
+  right: 0;
+  display: none;
+}
+
+.menu-bells{
+  padding: 0px 20px;
+  min-height: 330px;
+  max-width: 400px;
+
+}
+.menu-bells .bells-head {
+  padding: 10px 10px;
+  padding-top: 0px;
+}
+
+ .menu-bells-head h1 {
+  font-family: none;
+  font-size: 32px;
+  padding: 0px;
+
+}
+ .menu-bells .bells-body {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction:column;
+  overflow-y: scroll;
+  height:300px;
+}
+.menu-bells .bells-body::-webkit-scrollbar {
+  width: 12px;
+}
+
+.menu-bells .bells-body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+.menu-bells .bells-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+background-color: #7b0ec4;
+}
+
+
+ .menu-bells .bell {
+ 
+  padding: 10px 30px;
+}
+ .menu-bells .bell .bell-head{
+  margin: 20px 0px; 
+  
+}
+ .menu-bells .bell .bell-footer hr{
+  margin-top: 30px; 
+  height: 0.5px;
+  width: 80%;
+  opacity: 0.3;
+  
+}
+
+.bell-list:hover a,.bell-list:active a,.bell-list:focus a{
+  color: #7b0ec4;
+}
+
+.kategoriler{
+  position: absolute;
+  top: 12%;
+  background-color: #fff;
+  left: 39%;
+  padding: 10px;
+  z-index: 1;
+  display: none;
+}
+
+.kategoriler li a{
+  padding: 8px 5px;
+}
+
+.menuBtn li a:hover{
+  color: #7b0ec4;
 }
