@@ -35,6 +35,10 @@ body{
   font-size: 32px;
   font-weight: 900 !important;
 }
+.logo a{
+  color: rgb(21, 21, 21);
+
+}
 .menuBtn {
   display: flex;
   justify-content: flex-start;
