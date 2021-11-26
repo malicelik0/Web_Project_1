@@ -1,5 +1,9 @@
 
 
+
+
+
+
 var main = document.getElementById("main");
 var sliders = main.getElementsByClassName("slider");
 var sliderSay= sliders.length;
@@ -91,6 +95,7 @@ function bell(){
     var bells = document.getElementsByClassName("menu-bells");
     var bells_list=document.getElementsByClassName("bell-list");
     var a=bells_list[0].getElementsByTagName("a");
+
      if(bells[0].style.display=="block"){
         bells[0].style.display="none";
         a[0].style.color="black";
@@ -121,3 +126,28 @@ function kategori(){
 
 
 }
+
+
+var url = window.location.href; //http://127.0.0.1:5500/index.html?email=admin
+var email = url.split("=")[1].split("?")[0];
+var pass = url.split("=")[2].split("#")[0];
+if(email=="admin" && pass=="12345"){
+    var loginList= document.querySelector(".login");
+    var signupList= document.querySelector(".signup");
+    var profileList= document.querySelector(".profile");
+    var bellList = document.querySelector(".bell-list");
+    var cikis=document.querySelector(".exit");
+    loginList.style.display="none";
+    signupList.style.display="none";
+    profileList.style.display="block";
+    bellList.style.display="block";
+    cikis.style.display="block";
+
+
+}else{
+    var bellList = document.querySelector(".bell-list");
+    bellList.style.display="none";
+}
+
+
+

@@ -10,14 +10,14 @@
   <body>
     <div class="merkez">
       <h1>Giriş Yap</h1>
-      <form method="post">
+      <form method="post" id="loginForm">
         <div class="metin">
-          <input type="text" required />
+          <input type="text" required id="email"/>
           <span></span>
           <label>E-Posta</label>
         </div>
         <div class="metin">
-          <input type="password" required />
+          <input type="password" required id="pass" />
           <span></span>
           <label>Parola</label>
         </div>
@@ -29,5 +29,6 @@
         </div>
       </form>
     </div>
+    <script src="assets/js/post.js" type="text/javascript"></script>
   </body>
 </html>

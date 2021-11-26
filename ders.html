@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programlama - FALY</title>
+
+     <!--CSS-->
+     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+     <!--CSS End-->
+</head>
+<body>
+    <nav>
+        <div class="ustBar">
+          <div class="ustBarIci">
+            <div class="logo">
+              <h1><a href="index.html">FALY</a></h1>
+            </div>
+            <ul class="menuBtn">
+              <li><a href="index.html">Ana Sayfa</a></li>
+              <li><a href="about.html">Hakkımızda</a></li>
+              <li><a href="javascript:kategori()">Kategoriler</a></li>
+    
+              <div class="kategoriler">
+                <li><a href="#">Yazılım Geliştirme</a></li>
+                <li><a href="#">İşletme</a></li>
+                <li><a href="#">Finans ve Muhasebe</a></li>
+                <li><a href="#">Tasarım</a></li>
+              </div>
+            
+              <li><a href="content.html">İletişim</a></li>
+              <ul class="account-menu">
+                <li  class="profile">
+                  <a href="profile.html"><img src="assets/images/profile2.png" alt=""></a>
+                  
+    
+                </li>
+                <li class="login">
+                  <a href="login.html" class="login">Giriş Yap</a>
+                </li>
+                <li class="signup">
+                  <a href="signup.html" class="login">Kayıt Ol</a>
+                </li>
+                <li class="exit">
+                  <a href="index.html" >Çıkış</a>
+                </li>
+                <li class="bell-list"><a href="javascript:bell()"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+                <div class="bells menu-bells">
+                 
+                  <div class="bells-body">
+                          
+                    <div class="bell">
+                      <div class="bell-head">
+                        React Native ile android geliştirme Kampı 3 saatliğine ₺18.99 indirimi kaçırma. 
+                      </div>
+                      <div class="bell-body"></div>
+                      <div class="bell-footer">
+                        <a href="#" class="btn-sale">Hemen Katıl</a>
+                        <hr>
+    
+                      </div>
+                    </div>          
+                    <div class="bell">
+                      <div class="bell-head">
+                        React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
+                      </div>
+                      <div class="bell-body"></div>
+                      <div class="bell-footer">
+                        <a href="#" class="btn-sale">Hemen Katıl</a>
+                        <hr>
+    
+                      </div>
+                    </div> 
+                    <div class="bell">
+                      <div class="bell-head">
+                        React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
+                      </div>
+                      <div class="bell-body"></div>
+                      <div class="bell-footer">
+                        <a href="#" class="btn-sale">Hemen Katıl</a>
+                        <hr>
+    
+                      </div>
+                    </div> 
+                    <div class="bell">
+                      <div class="bell-head">
+                        React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
+                      </div>
+                      <div class="bell-body"></div>
+                      <div class="bell-footer">
+                        <a href="#" class="btn-sale">Hemen Katıl</a>
+                        <hr>
+    
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+                
+              </ul>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+     <section id="ders">
+
+        <div class="ders">
+            <div class="ders-head">
+                <div class="ders-img">
+                  <img src="assets/images/course/python.jpg" alt="">
+                </div>
+            </div>
+            <div class="ders-body">
+                <div class="title">
+                  Python Programlama 
+                </div>
+                <div class="info">
+                  <div class="teacher">
+                    Yazılım Bilimi
+                  </div>
+                  <div class="rating">4.6</div>
+                </div>
+                <div class="pice">
+                  <div class="pice-new">₺27.99</div>
+                  <div class="pice-old">₺46.99</div>
+                </div>
+
+                <div class="ders-footer">
+                    <a href="#" >Sepete Ekle</a>
+                  </div>
+                
+            </div>
+           
+            
+        </div>
+      
+
+     </section>
+    
+     <section id="course-info">
+         <h2>Kurs İçeriği</h2>
+        <div class="course-content">
+            <div class="accrodions" onclick="">
+                <div class="accrodions-head" id="head-1" onclick="accrodion('accrodion-1')">
+                  <span class="icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>  Giriş
+                </div>
+                <div class="accrodions-body" id="accrodion-1">
+                    <div class="course-head">
+                        <div class="course-title">
+                            <i class="fa fa-play-circle"></i> <a href="#">Visual Studio Kurulumu</a>
+                        </div>
+                        <div class="course-time">
+                            00:34
+                        </div>
+                    </div>
+                    <div class="course-head">
+                        <div class="course-title">
+                            <i class="fa fa-play-circle"></i> <a href="#">Visual Studio Genel Bakış</a>
+                        </div>
+                        <div class="course-time">
+                            03:10
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accrodions">
+                <div class="accrodions-head" id="head-2" onclick="accrodion('accrodion-2')">
+                    <span class="icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>  Temel Kavramlar
+                </div>
+                <div class="accrodions-body" id="accrodion-2">
+                    <div class="course-head">
+                        <div class="course-title">
+                            <i class="fa fa-play-circle"></i><a href="#">Merhaba Dünya</a>
+                        </div>
+                        <div class="course-time">
+                            00:34
+                        </div>
+                    </div>
+                    <div class="course-head">
+                        <div class="course-title">
+                            <i class="fa fa-play-circle"></i><a href="#">Değişkenler</a>
+                        </div>
+                        <div class="course-time">
+                            03:10
+                        </div>
+                    </div>
+                    <div class="course-head">
+                        <div class="course-title">
+                            <i class="fa fa-play-circle"></i><a href="#">Değişken Tipleri</a>
+                        </div>
+                        <div class="course-time">
+                            02:50
+                        </div>
+                    </div>
+                    <div class="course-head">
+                        <div class="course-title">
+                            <i class="fa fa-play-circle"></i><a href="#">Int</a>
+                        </div>
+                        <div class="course-time">
+                            05:20
+                        </div>
+                    </div>
+                    <div class="course-head">
+                        <div class="course-title">
+                            <i class="fa fa-play-circle"></i><a href="#">String</a>
+                        </div>
+                        <div class="course-time">
+                            04:45
+                        </div>
+                    </div>
+                    <div class="course-head">
+                        <div class="course-title">
+                            <i class="fa fa-play-circle"></i> <a href="#">Float</a>
+                        </div>
+                        <div class="course-time">
+                            05:12
+                        </div>
+                    </div>
+                    <div class="course-head">
+                        <div class="course-title">
+                            <i class="fa fa-play-circle"></i><a href="#">Double</a>
+                        </div>
+                        <div class="course-time">
+                            06:18
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+     </section>    
+    <!--Footer-->
+     <footer class="altBar">
+        <div class="altBarAlan">
+          <div class="satir">
+            <div class="altBarSutun">
+              <h4>Şikayet Öneri</h4>
+              <ul>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+            <div class="altBarSutun">
+              <h4>Menü</h4>
+              <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Birimler</a></li>
+                <li><a href="#">Dersler</a></li>
+                <li><a href="#">İletişim</a></li>
+              </ul>
+            </div>
+           
+            <div class="altBarSutun">
+              <h4>Bizi Takip Et</h4>
+              <div class="sosyalMedya">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://malicelik.com/"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </footer>
+    <script src="assets/js/course.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSczbSdOWpG6ojjRQBi-CDC_CEiMy_MVe0jOJzdvDH43vo73JA/formResponse"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+        <h2>Başlıksız form<br><small></small></h2>
+
+
+    <!-- Field type: "short" id: "758886075" -->
+        <legend for="758886075">Ad</legend>
+        <div class="form-group">
+            <input id="1445637644" type="text" name="entry.1445637644" class="form-control" >
+        </div>
+
+
+    <!-- Field type: "short" id: "907789813" -->
+        <legend for="907789813">Soyad</legend>
+        <div class="form-group">
+            <input id="1292567645" type="text" name="entry.1292567645" class="form-control" >
+        </div>
+
+
+    <!-- Field type: "short" id: "2078341497" -->
+        <legend for="2078341497">E-Posta</legend>
+        <div class="form-group">
+            <input id="1541522882" type="text" name="entry.1541522882" class="form-control" >
+        </div>
+
+
+    <!-- Field type: "paragraph" id: "1598590935" -->
+        <legend for="1598590935">Mesaj</legend>
+        <div class="form-group">
+            <textarea id="1650464129" name="entry.1650464129" class="form-control" ></textarea>
+        </div>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="-5184572550735272116">
+    <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+    <input type="hidden" name="pageHistory" value="0">
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+<script>
+    $('#bootstrapForm').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    $('#bootstrapForm').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        error: function () {
+            // Submit of form should be successful but JSONP callback will fail because Google Forms
+            // does not support it, so this is handled as a failure.
+            alert('Form Submitted. Thanks.')
+            // You can also redirect the user to a custom thank-you page:
+            // window.location = 'http://www.mydomain.com/thankyoupage.html'
+        }
+    })
+})
+</script>
+</body>
+</html>
