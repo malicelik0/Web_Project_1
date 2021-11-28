@@ -12,84 +12,102 @@
     <title>İletişim FALY</title>
 </head>
 <body>
-    <nav>
-        <div class="ustBar">
-          <div class="ustBarIci">
-            <div class="logo">
-              <h1><a href="">FALY</a></h1>
-            </div>
-            <ul class="menuBtn">
-              <li><a href="index.html">Ana Sayfa</a></li>
-              <li><a href="about.html">Hakkımızda</a></li>
-              <li><a href="javascript:kategori()">Kategoriler</a></li>
-  
-              <div class="kategoriler">
-                <li><a href="#">Yazılım Geliştirme</a></li>
-                <li><a href="#">İşletme</a></li>
-                <li><a href="#">Finans ve Muhasebe</a></li>
-                <li><a href="#">Tasarım</a></li>
-              </div>
-            
-              <li><a href="iletisim.html">İletişim</a></li>
-              <ul class="account-menu">
-                <li><a href="profile.html"><img src="assets/images/profile2.png" alt=""></a></li>
-                <li class="bell-list"><a href="javascript:bell()"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
-                <div class="bells menu-bells">
-                 
-                  <div class="bells-body">
-                          
-                    <div class="bell">
-                      <div class="bell-head">
-                        React Native ile android geliştirme Kampı 3 saatliğine ₺18.99 indirimi kaçırma. 
-                      </div>
-                      <div class="bell-body"></div>
-                      <div class="bell-footer">
-                        <a href="#" class="btn-sale">Hemen Katıl</a>
-                        <hr>
-    
-                      </div>
-                    </div>          
-                    <div class="bell">
-                      <div class="bell-head">
-                        React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
-                      </div>
-                      <div class="bell-body"></div>
-                      <div class="bell-footer">
-                        <a href="#" class="btn-sale">Hemen Katıl</a>
-                        <hr>
-    
-                      </div>
-                    </div> 
-                    <div class="bell">
-                      <div class="bell-head">
-                        React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
-                      </div>
-                      <div class="bell-body"></div>
-                      <div class="bell-footer">
-                        <a href="#" class="btn-sale">Hemen Katıl</a>
-                        <hr>
-    
-                      </div>
-                    </div> 
-                    <div class="bell">
-                      <div class="bell-head">
-                        React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
-                      </div>
-                      <div class="bell-body"></div>
-                      <div class="bell-footer">
-                        <a href="#" class="btn-sale">Hemen Katıl</a>
-                        <hr>
-    
-                      </div>
-                    </div> 
-                  </div>
-                </div>
-              </ul>
-            </ul>
-           
-          </div>
+  <section id="secuyari">
+    <div class="uyari">
+      Menüdeki Bildirimleri Görebilmek için lütfen giriş yapınız. <a href="readme.txt">Bilgi için</a>
+    </div>
+  </section>
+  <nav>
+    <div class="ustBar">
+      <div class="ustBarIci">
+        <div class="logo">
+          <h1><a href="javascript:kontrol('index','')">FALY</a></h1>
         </div>
-      </nav>
+        <ul class="menuBtn">
+          <li><a href="javascript:kontrol('index','')">Ana Sayfa</a></li>
+          <li><a href="javascript:kontrol('about','')">Hakkımızda</a></li>
+          <li><a href="javascript:kategori()">Kategoriler</a></li>
+
+          <div class="kategoriler">
+            <li><a href="javascript:kontrol('index','web')">Web Geliştirme</a></li>
+            <li><a href="javascript:kontrol('index','programlama')">Programlamaya Başlangıç</a></li>
+          </div>
+        
+          <li><a href="javascript:kontrol('iletisim','')">İletişim</a></li>
+          <li class="exit">
+            <a href="index.html" >Çıkış</a>
+          </li>
+          <ul class="account-menu">
+            <li  class="profile">
+              <a href="javascript:kontrol('index','')"><img src="assets/images/profile2.png" alt=""></a>
+              
+
+            </li>
+            <li class="login">
+              <a href="login.html" class="login">Giriş Yap</a>
+            </li>
+            <li class="signup">
+              <a href="signup.html" class="login">Kayıt Ol</a>
+            </li>
+           
+            <li class="bell-list"><a href="javascript:bell()"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+            <div class="bells menu-bells">
+             
+              <div class="bells-body">
+                      
+                <div class="bell">
+                  <div class="bell-head">
+                    React Native ile android geliştirme Kampı 3 saatliğine ₺18.99 indirimi kaçırma. 
+                  </div>
+                  <div class="bell-body"></div>
+                  <div class="bell-footer">
+                    <a href="#" class="btn-sale">Hemen Katıl</a>
+                    <hr>
+
+                  </div>
+                </div>          
+                <div class="bell">
+                  <div class="bell-head">
+                    React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
+                  </div>
+                  <div class="bell-body"></div>
+                  <div class="bell-footer">
+                    <a href="#" class="btn-sale">Hemen Katıl</a>
+                    <hr>
+
+                  </div>
+                </div> 
+                <div class="bell">
+                  <div class="bell-head">
+                    React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
+                  </div>
+                  <div class="bell-body"></div>
+                  <div class="bell-footer">
+                    <a href="#" class="btn-sale">Hemen Katıl</a>
+                    <hr>
+
+                  </div>
+                </div> 
+                <div class="bell">
+                  <div class="bell-head">
+                    React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
+                  </div>
+                  <div class="bell-body"></div>
+                  <div class="bell-footer">
+                    <a href="#" class="btn-sale">Hemen Katıl</a>
+                    <hr>
+
+                  </div>
+                </div> 
+              </div>
+            </div>
+            
+          </ul>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
       <section id="iletisimMain">
       <div class="iletisimAdres">
           <p>Ayazma Mahallesi Kuvayi Milliye Caddesi</p>
@@ -161,12 +179,6 @@
         <div class="altBarAlan">
           <div class="satir">
             <div class="altBarSutun">
-              <h4>Şikayet Öneri</h4>
-              <ul>
-                <li><a href="#"></a></li>
-              </ul>
-            </div>
-            <div class="altBarSutun">
               <h4>Menü</h4>
               <ul>
                 <li><a href="index.html">Ana Sayfa</a></li>
@@ -189,5 +201,8 @@
         </div>
       </footer> 
       <script src="assets/js/script.js" type="text/javascript"></script>
+    <script src="assets/js/katagori.js" type="text/javascript"></script>
+    <script src="assets/js/url.js" type="text/javascript"></script>
+
 </body>
 </html>

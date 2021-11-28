@@ -7,7 +7,6 @@ function formSubmit(event) {
     let pass= document.querySelector("#pass").value;
 
     if(email=="admin" && pass=="12345"){
-        var securty=pass+"#7854@63";
-        window.location.href="index.html?e=" + email +"?p="+securty;
+        window.location.href="index.html?d=1";
     }
 }

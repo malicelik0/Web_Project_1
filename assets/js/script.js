@@ -1,96 +1,3 @@
-
-
-
-
-
-
-var main = document.getElementById("main");
-var sliders = main.getElementsByClassName("slider");
-var sliderSay= sliders.length;
-var firstElement=0;
-var maxelemment=3;
-var temp=0;
-var degisimSayisi=0;
-var before=main.getElementsByClassName("before-arrow");
-var after=main.getElementsByClassName("after-arrow");
-before[0].style.display="none";
-
-for(var j=maxelemment;j<sliderSay;j++){
-    sliders[j].style.display="none";
-}
-function yaz(){
-    console.log(`Değişim Sayısı: ${degisimSayisi}`);
-    console.log(`Temp Numarası: ${temp}`);
-    console.log(`Temp+3 Numarası: ${temp+3}`);
-    console.log(`Slider Sayısı: ${sliderSay}`);
-    
-}
-
-yaz();
-function slaytGoster(SlaytNo){
- 
-    temp=degisimSayisi;
-    degisimSayisi=(sliderSay-maxelemment);//7-3 4
-    if(degisimSayisi>=maxelemment)
-    {
-        degisimSayisi=maxelemment; //3
-    }
-    degisimSayisi=degisimSayisi+SlaytNo;
-    for(var i=SlaytNo;i<degisimSayisi;i++){//0 3+0
-        sliders[i].style.display="none";
-    }
-    for(var i=degisimSayisi;i<(degisimSayisi+3);i++){//3+0
-        sliders[i].style.display="block";
-    }
-    before[0].style.display="inline-block";
-    sliderSay=sliderSay-3;
-    yaz();
-
-    if(sliderSay<=maxelemment){
-        after[0].style.display="none";
-    }else{
-        after[0].style.display="inline-block";
-
-    }
-    
-
-}
-
-function onceki(){
-    for(var i=0;i<main.getElementsByClassName("slider").length;i++){//0 3+0
-        sliders[i].style.display="none";
-    }
-    for(var j=temp;j<(temp+maxelemment);j++){//3+0
-        sliders[j].style.display="block";
-    }
-    firstElement=temp;
-    if(temp==0)
-        sliderSay=11;
-    else
-        sliderSay=sliderSay+3;
-    
-
-    yaz();
-    temp=temp-3;
-
-    if(sliderSay<=maxelemment)
-        after[0].style.display="none";
-    else
-        after[0].style.display="inline-block";
-    
-
-    if(sliderSay==11)
-        before[0].style.display="none";
-    else
-        before[0].style.display="inline-block"; 
-
-
-}
-function sonraki(){
-    slaytGoster(firstElement);
-    firstElement+=maxelemment;
-}
-
 function bell(){
     var bells = document.getElementsByClassName("menu-bells");
     var bells_list=document.getElementsByClassName("bell-list");
@@ -105,49 +12,57 @@ function bell(){
         a[0].style.color="#7b0ec4";
      }
         
-     console.log(bells_list);
-     console.log(a);
+    
     
 }
 
-function kategori(){
-    var katagoriler = document.getElementsByClassName("kategoriler");
-    
-    if(katagoriler[0].style.display=="block"){
-        katagoriler[0].style.display="none";
-        //a[0].style.color="black";
-     }
-     else{
-        katagoriler[0].style.display="block";
-        //a[0].style.color="#7b0ec4";
-     }
+function join(par){
+    var url = window.location.href; //http://127.0.0.1:5500/index.html?email=admin
+    var location="";
+    var d="";
+    var param= url.split("?");
+    if(param.length>1){
+        d = param[1].split("=")[1];
+        if(d.split("#").length==2)
+            d=d.split("#")[0];
+    }
 
-     console.log(katagoriler);
+    if(d=="1"){
+      var bells = document.querySelector(".bells");
+      var bells = bells.querySelectorAll(".bell");
+      var parId="#bell-"+par;
+      var bellfooter = bells[par-1].querySelector(parId);
+      var a = bellfooter.getElementsByTagName("a");
+      alert("Katılımınızı aldık. İyi çalışmalar dileriz");
+      bellfooter.innerHTML='<a href="javascript:join('+par+');"  id="bell-'+par+'" class="btn-sale">Katıldınız</a>';
+      a[0].style.backgroundColor ="rgb(72 72 69)";
+    }else{
+      alert("Katılmanız için giriş yapmalısınız!");
 
-
+    }
 }
 
+function add(par){
+   var url = window.location.href; //http://127.0.0.1:5500/index.html?email=admin
+    var location="";
+    var d="";
+    var param= url.split("?");
+    if(param.length>1){
+        d = param[1].split("=")[1];
+        if(d.split("#").length==2)
+            d=d.split("#")[0];
+    }
 
-var url = window.location.href; //http://127.0.0.1:5500/index.html?email=admin
-var email = url.split("=")[1].split("?")[0];
-var pass = url.split("=")[2].split("#")[0];
-if(email=="admin" && pass=="12345"){
-    var loginList= document.querySelector(".login");
-    var signupList= document.querySelector(".signup");
-    var profileList= document.querySelector(".profile");
-    var bellList = document.querySelector(".bell-list");
-    var cikis=document.querySelector(".exit");
-    loginList.style.display="none";
-    signupList.style.display="none";
-    profileList.style.display="block";
-    bellList.style.display="block";
-    cikis.style.display="block";
-
-
-}else{
-    var bellList = document.querySelector(".bell-list");
-    bellList.style.display="none";
+    if(d=="1"){
+      var courses = document.querySelector("#add");
+      var courses = courses.querySelectorAll(".slider");
+      var parId="#course-"+par;
+      var coursefooter = courses[par-1].querySelector(parId);
+      var a = coursefooter.getElementsByTagName("a");
+      alert("Satın alma işlemi gerçekleşti. İyi çalışmalar dileriz");
+      coursefooter.innerHTML='<a href="javascript:add('+par+');"  class="btn-sale">Derse Git</a>';
+      a[0].style.backgroundColor ="rgb(72 72 69)";
+    }else{
+      alert("Satın Almanız için giriş yapmalısınız!");
+    }
 }
-
-
-

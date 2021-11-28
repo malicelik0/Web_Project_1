@@ -17,10 +17,11 @@ body{
   background-color: #ffffff;
 }
 .ustBarIci {
-  width: 1000px;
+  width: 100%;
   height: 100%;
   display: block;
   margin: 0 auto;
+  padding: 0px 10%;
 }
 .logo {
   height: 100%;
@@ -37,6 +38,8 @@ body{
 }
 .logo a{
   color: rgb(21, 21, 21);
+    border: 3px solid rgb(21, 21, 21);
+    padding: 3px;
 
 }
 .menuBtn {
@@ -465,9 +468,12 @@ width: 100%;
 }
 
 .menu-bells{
-  padding: 0px 20px;
+  padding: 20px 20px;
   min-height: 330px;
+  top: 20%;
   max-width: 400px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.083);
+  border-radius:5px;
 
 }
 .menu-bells .bells-head {
@@ -527,11 +533,14 @@ background-color: #7b0ec4;
 
 .kategoriler{
   position: absolute;
-  top: 12%;
+  top: 20%;
   background-color: #fff;
-  left: 39%;
+  left: 37%;
   padding: 10px;
+  /* border: 1px solid black; */
   z-index: 1;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px #00000033;
   display: none;
 }
 
@@ -552,10 +561,10 @@ background-color: #7b0ec4;
 }
 
 #ders,#course-info{
-  padding: 10%;
+  padding: 1% 10%;
 }
 #ders {
-  background-color:rgba(238, 238, 238, 0.35);
+  background-color:rgb(52 51 51 / 35%);
 }
 .ders{
   display: flex;
@@ -570,6 +579,7 @@ background-color: #7b0ec4;
   background-color:white;
   height: 10%;
   padding: 10px;
+  min-width: 200px;
   margin: 0px 10px;
   border-radius: 5px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.076);
@@ -577,7 +587,7 @@ background-color: #7b0ec4;
 
 .ders-footer a{
   padding: 10px;
-  background-color: rgb(206, 150, 150);
+  background-color: rgb(217 53 53);
   font-size:12px;
  
   color:white;
@@ -586,7 +596,7 @@ background-color: #7b0ec4;
 }
 
 .ders-footer{
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 
 .ders-body .title{
@@ -652,55 +662,70 @@ background-color: #7b0ec4;
   font-weight:400;
 }
 #iletisimMain{
-  height: 60vh;
+  height: 100vh;
   padding: 100px;
   background: linear-gradient(120deg, #2980b9, #8e44ad);
   overflow: hidden;
   color: #ffffff;
 }
 .iletisimAdres{
-  width: 50%;
   float: right;
-  text-align: center;
+ 
   
 }
-.iletisimForm{
-  width: 50%;
-  float: left;
-  text-align: center;
-  
-  border-radius: 10px;
+
+.iletisimAdres p{
+  padding-top: 5px;
+}
+.iletisimAdres iframe{
+  margin-top: 10px;
+}
+.sosyalMedya{
+  margin-top: 10px;
+
 }
 .form-group input{
   width: 40%;
   padding: 0 5px;
   height: 40px;
   font-size: 16px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background: none;
   outline: none;
   border-color: white;
+  /* border: none; */
+  border: 1px solid white;
+  background-color:#e9f4fb;
+
+
+  margin-top: 10px;
 }
 .form-group textarea{
   width: 40%;
   padding: 0 5px;
   height: 40px;
   font-size: 16px;
-  border-radius: 10px;
   background: none;
+  background-color:#e9f4fb;
   outline: none;
   border-color: white;
+  margin-top: 10px;
+}
+#iletisimMain legend{
+  margin-top: 10px;
 }
 #iletisimMain input[type="submit"] {
   width: 30%;
   height: 40px;
-  border: 1px solid;
+  border:none;
   background: #2691d9;
   border-radius: 25px;
   font-size: 18px;
   color: #e9f4fb;
   font-weight: 700;
+  color: -internal-light-dark(rgb(255, 255, 255), rgb(65, 63, 63));
   cursor: pointer;
+  margin-top: 10px;
   outline: none;
 }
 .iletisimAdres .sosyalMedya a {
@@ -718,4 +743,46 @@ background-color: #7b0ec4;
 .iletisimAdres .sosyalMedya a:hover {
   color: #0c9797;
   background-color: #ffffff;
+}
+
+.uyari{
+  width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#secuyari{
+  background-color: #f3ec15;
+  font-weight: 800;
+}
+.onemli{
+  height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    color: black;
+    font-style: oblique;
+}
+
+.onemli span,.onemli a{
+  font-family: 'Roboto', sans-serif;
+  font-style: initial;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+
+
+}
+
+.sliders .slider{
+  transition: opacity 2s linear, height 2s step-start;
+}
+
+.hide{
+  opacity: 0;
+  height: 0;
+  transition-timing-function: linear, step-end;
 }

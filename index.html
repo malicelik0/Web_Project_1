@@ -17,30 +17,36 @@
   </head>
   <body>
     <!--Nav-->
+    <section id="secuyari">
+      <div class="uyari">
+        Menüdeki Bildirimleri Görebilmek için lütfen giriş yapınız.
+      </div>
+    </section>
     <nav>
       <div class="ustBar">
         <div class="ustBarIci">
           <div class="logo">
-            <h1><a href="index.html">FALY</a></h1>
+            <h1><a href="javascript:kontrol('index','')">FALY</a></h1>
           </div>
           <ul class="menuBtn">
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="javascript:kontrol('index','')">Ana Sayfa</a></li>
+            <li><a href="javascript:kontrol('about','')">Hakkımızda</a></li>
             <li><a href="javascript:kategori()">Kategoriler</a></li>
-
+  
             <div class="kategoriler">
-              <li><a href="#">Yazılım Geliştirme</a></li>
-              <li><a href="#">İşletme</a></li>
-              <li><a href="#">Finans ve Muhasebe</a></li>
-              <li><a href="#">Tasarım</a></li>
+              <li><a href="javascript:kontrol('index','web')">Web Geliştirme</a></li>
+              <li><a href="javascript:kontrol('index','programlama')">Programlamaya Başlangıç</a></li>
             </div>
           
-            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="javascript:kontrol('iletisim','')">İletişim</a></li>
+            <li class="exit">
+              <a href="index.html" >Çıkış</a>
+            </li>
             <ul class="account-menu">
               <li  class="profile">
-                <a href="profile.html"><img src="assets/images/profile2.png" alt=""></a>
+                <a href="javascript:kontrol('index','')"><img src="assets/images/profile2.png" alt=""></a>
                 
-
+  
               </li>
               <li class="login">
                 <a href="login.html" class="login">Giriş Yap</a>
@@ -48,57 +54,29 @@
               <li class="signup">
                 <a href="signup.html" class="login">Kayıt Ol</a>
               </li>
-              <li class="exit">
-                <a href="index.html" >Çıkış</a>
-              </li>
+             
               <li class="bell-list"><a href="javascript:bell()"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
-              <div class="bells menu-bells">
+              <div class="menu-bells">
                
                 <div class="bells-body">
                         
                   <div class="bell">
                     <div class="bell-head">
-                      React Native ile android geliştirme Kampı 3 saatliğine ₺18.99 indirimi kaçırma. 
+                      React Native ile android geliştirme Kampı başlamak üzere 
                     </div>
                     <div class="bell-body"></div>
-                    <div class="bell-footer">
-                      <a href="#" class="btn-sale">Hemen Katıl</a>
-                      <hr>
-  
-                    </div>
                   </div>          
                   <div class="bell">
                     <div class="bell-head">
-                      React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
+                      React ve Nodejs ile web geliştirme Kampı iyi dersler
                     </div>
                     <div class="bell-body"></div>
-                    <div class="bell-footer">
-                      <a href="#" class="btn-sale">Hemen Katıl</a>
-                      <hr>
-  
-                    </div>
                   </div> 
                   <div class="bell">
                     <div class="bell-head">
-                      React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
+                      Faly ile indirimli derslerden alanlara 1 kurs hediye. Hemen kayıt ol ve sende bize katıl
                     </div>
                     <div class="bell-body"></div>
-                    <div class="bell-footer">
-                      <a href="#" class="btn-sale">Hemen Katıl</a>
-                      <hr>
-  
-                    </div>
-                  </div> 
-                  <div class="bell">
-                    <div class="bell-head">
-                      React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
-                    </div>
-                    <div class="bell-body"></div>
-                    <div class="bell-footer">
-                      <a href="#" class="btn-sale">Hemen Katıl</a>
-                      <hr>
-  
-                    </div>
                   </div> 
                 </div>
               </div>
@@ -141,38 +119,7 @@
                 <div class="slider">
                   <div class="slider-head">
                       <div class="slider-img">
-                        <a href="ders.html">
-                          <img src="assets/images/course/c.jpg" alt="">
-                        </a>
-                      </div>
-                  </div>
-                  <div class="slider-body">
-                      <div class="title">
-<<<<<<< Updated upstream
-                        <a href="ders.html">C Programlama</a>
-=======
-                       <a href="product.html" >C Programlama Eğitimi</a>
->>>>>>> Stashed changes
-                      </div>
-                      <div class="info">
-                        <div class="teacher">
-                          KhanAcademy
-                        </div>
-                        <div class="rating">4.3</div>
-                      </div>
-                      <div class="pice">
-                        <div class="pice-new">₺27.99</div>
-                        <div class="pice-old">₺46.99</div>
-                      </div>
-                  </div>
-                  <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
-                  </div>
-                </div>
-                <div class="slider">
-                  <div class="slider-head">
-                      <div class="slider-img">
-                        <img src="assets/images/course/csharp.jpg" alt="">
+                        <img src="https://drive.google.com/u/0/uc?id=1mSaijdJofrBGjN3GrIzoS2W1INakBp8Q&export=download" alt="">
                       </div>
                   </div>
                   <div class="slider-body">
@@ -191,13 +138,13 @@
                       </div>
                   </div>
                   <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
+                    <a href="#" >Satın Al</a>
                   </div>
                 </div>
                 <div class="slider">
                   <div class="slider-head">
                       <div class="slider-img">
-                        <img src="assets/images/course/python.jpg" alt="">
+                        <img src="https://drive.google.com/u/0/uc?id=13vzmWt3t5b7Rs2TNBRJcb6NlgXRtmRlo&export=download" alt="">
                       </div>
                   </div>
                   <div class="slider-body">
@@ -216,13 +163,13 @@
                       </div>
                   </div>
                   <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
+                    <a href="#" >Satın Al</a>
                   </div>
                 </div>
                 <div class="slider">
                   <div class="slider-head">
                       <div class="slider-img">
-                        <img src="assets/images/course/vujs.jpg" alt="">
+                        <img src="https://drive.google.com/u/0/uc?id=1Cf0-lMyE0MudAMDwRT6amkprqB98UcFZ&export=download" alt="">
                       </div>
                   </div>
                   <div class="slider-body">
@@ -241,13 +188,13 @@
                       </div>
                   </div>
                   <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
+                    <a href="#" >Satın Al</a>
                   </div>
                 </div>
                 <div class="slider">
                   <div class="slider-head">
                       <div class="slider-img">
-                        <img src="assets/images/course/hmtlcss.jpg" alt="">
+                        <img src="https://drive.google.com/u/0/uc?id=1HKdMUaJIysRZ1fDT0hFEvMBQY9r5QxPq&export=download" alt="">
                       </div>
                   </div>
                   <div class="slider-body">
@@ -266,13 +213,13 @@
                       </div>
                   </div>
                   <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
+                    <a href="#" >Satın Al</a>
                   </div>
                 </div>
                 <div class="slider">
                   <div class="slider-head">
                       <div class="slider-img">
-                        <img src="assets/images/course/js.jpg" alt="">
+                        <img src="https://drive.google.com/u/0/uc?id=19FRk9aEmienaGx55dSMnuRqPUsuvusxf&export=download" alt="">
                       </div>
                   </div>
                   <div class="slider-body">
@@ -291,13 +238,13 @@
                       </div>
                   </div>
                   <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
+                    <a href="#" >Satın Al</a>
                   </div>
                 </div>
                 <div class="slider">
                   <div class="slider-head">
                       <div class="slider-img">
-                        <img src="assets/images/course/hmtlcss.jpg" alt="">
+                        <img src="https://drive.google.com/u/0/uc?id=1HKdMUaJIysRZ1fDT0hFEvMBQY9r5QxPq&export=download" alt="">
                       </div>
                   </div>
                   <div class="slider-body">
@@ -316,7 +263,7 @@
                       </div>
                   </div>
                   <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
+                    <a href="#" >Satın Al</a>
                   </div>
                 </div>
                 <div class="slider">
@@ -341,109 +288,10 @@
                       </div>
                   </div>
                   <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
+                    <a href="#" >Satın Al</a>
                   </div>
                 </div>
-                <div class="slider">
-                  <div class="slider-head">
-                      <div class="slider-img">
-                        <img src="assets/images/course/csharp.jpg" alt="">
-                      </div>
-                  </div>
-                  <div class="slider-body">
-                      <div class="title">
-                        C# Programlama Eğitimi
-                      </div>
-                      <div class="info">
-                        <div class="teacher">
-                          Murat Yücedağ
-                        </div>
-                        <div class="rating">4.7</div>
-                      </div>
-                      <div class="pice">
-                        <div class="pice-new">₺27.99</div>
-                        <div class="pice-old">₺46.99</div>
-                      </div>
-                  </div>
-                  <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
-                  </div>
-                </div>
-                <div class="slider">
-                  <div class="slider-head">
-                      <div class="slider-img">
-                        <img src="assets/images/course/c.jpg" alt="">
-                      </div>
-                  </div>
-                  <div class="slider-body">
-                      <div class="title">
-                        C Programlama Eğitimi
-                      </div>
-                      <div class="info">
-                        <div class="teacher">
-                          KhanAcademy
-                        </div>
-                        <div class="rating">4.3</div>
-                      </div>
-                      <div class="pice">
-                        <div class="pice-new">₺27.99</div>
-                        <div class="pice-old">₺46.99</div>
-                      </div>
-                  </div>
-                  <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
-                  </div>
-                </div>
-                <div class="slider">
-                  <div class="slider-head">
-                      <div class="slider-img">
-                        <img src="assets/images/course/python.jpg" alt="">
-                      </div>
-                  </div>
-                  <div class="slider-body">
-                      <div class="title">
-                        Python Eğitimi
-                      </div>
-                      <div class="info">
-                        <div class="teacher">
-                          Tayfun Erbilen
-                        </div>
-                        <div class="rating">4.6</div>
-                      </div>
-                      <div class="pice">
-                        <div class="pice-new">₺27.99</div>
-                        <div class="pice-old">₺46.99</div>
-                      </div>
-                  </div>
-                  <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
-                  </div>
-                </div>
-                <div class="slider">
-                  <div class="slider-head">
-                      <div class="slider-img">
-                        <img src="assets/images/course/vujs.jpg" alt="">
-                      </div>
-                  </div>
-                  <div class="slider-body">
-                      <div class="title">
-                        Vu Js Eğitimi
-                      </div>
-                      <div class="info">
-                        <div class="teacher">
-                         Engin Demiroğ
-                        </div>
-                        <div class="rating">4.2</div>
-                      </div>
-                      <div class="pice">
-                        <div class="pice-new">₺29.99</div>
-                        <div class="pice-old">₺46.99</div>
-                      </div>
-                  </div>
-                  <div class="slider-footer">
-                    <a href="#" >Sepete Ekle</a>
-                  </div>
-                </div>
+           
             </div>
             
 
@@ -451,7 +299,7 @@
             </div>
             <div class="bells">
               <div class="bells-head">
-                  <h1>Bildirimler</h1>
+                  <h1>Etkinlikler</h1>
               </div>        
               <div class="bells-body">
                 <div class="bell">
@@ -461,8 +309,8 @@
                   <div class="bell-body">
 
                   </div>
-                  <div class="bell-footer">
-                    <a href="#" class="btn-sale">Hemen Katıl</a>
+                  <div class="bell-footer" id="bell-1">
+                    <a href="javascript:join(1);"   class="btn-sale">Hemen Katıl</a>
                     <hr>
                   </div>
 
@@ -473,8 +321,8 @@
                     Kotlin ile android geliştirme 2 saatliğine %55 indirimde.
                   </div>
                   <div class="bell-body"></div>
-                  <div class="bell-footer">
-                    <a href="#" class="btn-sale">Hemen Katıl</a>
+                  <div class="bell-footer" id="bell-2">
+                    <a href="javascript:join(2);"  class="btn-sale">Hemen Katıl</a>
                     <hr>
 
                   </div>
@@ -484,8 +332,8 @@
                     React Native ile android geliştirme Kampı 3 saatliğine ₺18.99 indirimi kaçırma. 
                   </div>
                   <div class="bell-body"></div>
-                  <div class="bell-footer">
-                    <a href="#" class="btn-sale">Hemen Katıl</a>
+                  <div class="bell-footer" id="bell-3" >
+                    <a href="javascript:join(3);" class="btn-sale">Hemen Katıl</a>
                     <hr>
 
                   </div>
@@ -495,8 +343,8 @@
                     React ve Nodejs ile web geliştirme Kampı 2 saatliğine ₺24.99 indirimi kaçırma. 
                   </div>
                   <div class="bell-body"></div>
-                  <div class="bell-footer">
-                    <a href="#" class="btn-sale">Hemen Katıl</a>
+                  <div class="bell-footer" id="bell-4">
+                    <a href="javascript:join(4);"  class="btn-sale">Hemen Katıl</a>
                     <hr>
 
                   </div>
@@ -531,8 +379,8 @@
         </div>
     </section>
 
-    <section class="slider-section">
-      <div class="sliders">
+    <section class="slider-section" id="web">
+      <div class="sliders" id="add">
         <div class="sliders-head">
           <h1>Web Geliştirme Kursları</h1>
       </div>
@@ -560,8 +408,8 @@
                   <div class="pice-old">₺46.99</div>
                 </div>
             </div>
-            <div class="slider-footer">
-              <a href="#" >Sepete Ekle</a>
+            <div class="slider-footer" id="course-1">
+              <a href="javascript:add(1);" >Satın Al</a>
             </div>
           </div>
           <div class="slider">
@@ -585,8 +433,8 @@
                   <div class="pice-old">₺46.99</div>
                 </div>
             </div>
-            <div class="slider-footer">
-              <a href="#" >Sepete Ekle</a>
+            <div class="slider-footer" id="course-2">
+              <a href="javascript:add(2);" >Satın Al</a>
             </div>
           </div>
           <div class="slider">
@@ -610,8 +458,8 @@
                   <div class="pice-old">₺46.99</div>
                 </div>
             </div>
-            <div class="slider-footer">
-              <a href="#" >Sepete Ekle</a>
+            <div class="slider-footer" id="course-3">
+              <a href="javascript:add(3);" >Satın Al</a>
             </div>
           </div>
           <div class="slider">
@@ -635,14 +483,14 @@
                   <div class="pice-old">₺46.99</div>
                 </div>
             </div>
-            <div class="slider-footer">
-              <a href="#" >Sepete Ekle</a>
+            <div class="slider-footer" id="course-4">
+              <a href="javascript:add(4);" >Satın Al</a>
             </div>
           </div>
       </div>
       </div>
     </section>
-    <section class="slider-section">
+    <section class="slider-section" id="programlama">
       <div class="sliders">
         <div class="sliders-head">
           <h1>Programlamaya Başlangıç</h1>
@@ -671,8 +519,8 @@
                   <div class="pice-old">₺46.99</div>
                 </div>
             </div>
-            <div class="slider-footer">
-              <a href="#" >Sepete Ekle</a>
+            <div class="slider-footer" id="course-5">
+              <a href="javascript:add(5);" >Satın Al</a>
             </div>
           </div>
        
@@ -697,8 +545,8 @@
                   <div class="pice-old">₺46.99</div>
                 </div>
             </div>
-            <div class="slider-footer">
-              <a href="#" >Sepete Ekle</a>
+            <div class="slider-footer" id="course-6">
+              <a href="javascript:add(6);" >Satın Al</a>
             </div>
           </div>
           <div class="slider">
@@ -722,8 +570,8 @@
                   <div class="pice-old">₺46.99</div>
                 </div>
             </div>
-            <div class="slider-footer">
-              <a href="#" >Sepete Ekle</a>
+            <div class="slider-footer" id="course-7">
+              <a href="javascript:add(7);" >Satın Al</a>
             </div>
           </div>
           <div class="slider">
@@ -747,8 +595,8 @@
                   <div class="pice-old">₺46.99</div>
                 </div>
             </div>
-            <div class="slider-footer">
-              <a href="ders.html" >Sepete Ekle</a>
+            <div class="slider-footer" id="course-8">
+              <a href="javascript:add(8);" >Satın Al</a>
             </div>
           </div>
       </div>
@@ -759,12 +607,6 @@
     <footer class="altBar">
       <div class="altBarAlan">
         <div class="satir">
-          <div class="altBarSutun">
-            <h4>Şikayet Öneri</h4>
-            <ul>
-              <li><a href="#"></a></li>
-            </ul>
-          </div>
           <div class="altBarSutun">
             <h4>Menü</h4>
             <ul>
@@ -789,6 +631,9 @@
     </footer>
 
     <script src="assets/js/script.js" type="text/javascript"></script>
+    <script src="assets/js/url.js" type="text/javascript"></script>
+    <script src="assets/js/coursel.js" type="text/javascript"></script>
+    <script src="assets/js/katagori.js" type="text/javascript"></script>
 
   </body>
 </html>
